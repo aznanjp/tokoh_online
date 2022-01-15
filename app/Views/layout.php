@@ -1,46 +1,52 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+  <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?= base_url('bootstrap-4.0.0/dist/css/bootstrap.min.css') ?>" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
-    <!-- Custom styles for this template -->
-   <style type="text/css">
-     
-      body {
-        padding-top: 5rem;
-      }
-      .starter-template {
-        padding: 3rem 1.5rem;
-        text-align: center;
-      }
-   </style>
-  </head>
+  <!-- Bootstrap core CSS -->
+  <link href="<?= base_url('bootstrap-4.0.0/dist/css/bootstrap.min.css') ?>" rel="stylesheet">
 
-  <body>
-    <?= $this->include('navbar')?>
+  <!-- Custom styles for this template -->
+  <style type="text/css">
+    body {
+      padding-top: 5rem;
+    }
 
-    <main role="main" class="container">
+    .starter-template {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <?= $this->include('navbar') ?>
+
+  <main role="main" class="container">
 
 
-      <?= $this->renderSection('content')?>
+    <?= $this->renderSection('content') ?>
 
-    </main><!-- /.container -->
+  </main><!-- /.container -->
 
-    
-    <script src="<?= base_url('bootstrap-4.0.0/dist/js/bootstrap.min.js') ?>"></script>
-    <script src="<?= base_url('jquery-3.6.0.min.js')?>"></script>
 
-  </body>
+  <script src="<?= base_url('bootstrap-4.0.0/dist/js/bootstrap.min.js') ?>"></script>
+  <script src="<?= base_url('jquery-3.6.0.min.js') ?>"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <?= $this->renderSection('script')?>
+</body>
+
 </html>
